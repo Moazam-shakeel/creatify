@@ -1,0 +1,255 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+
+#nav-box1 span {
+    margin-left: 55px;
+    color: #FF7006;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+#hero {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+#hero-contant {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+#hero-box1 {
+    width: 100%;
+    padding: 6px 50px;
+}
+
+#hero-box1 h1 {
+    font-size: 3.7rem;
+    color: white;
+}
+
+#hero-box1 h1 span {
+    font-size: 4.7rem;
+    color: #FF7006;
+}
+
+#hero-box1 button {
+    margin-top: 20px;
+    padding: 7px 40px;
+    background-color: #FF7006;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 900;
+    transition: all 1.2s;
+}
+
+#hero-box1 p {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+#hero-box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form-box {
+    margin-top: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    /* width: 400px; */
+    height: 460px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.password-container{
+    position: relative;
+}
+.password-container i{
+    position: relative;
+    margin-top: 9px;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+#toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #FF7006;
+}
+
+
+
+#form-bc {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+#name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name-fields input {
+    width: 48%;
+}
+
+#form-bc input {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-bottom: 1px solid #FF7006;
+    margin-top: 15px;
+    padding: 11px 10px;
+    font-size: larger;
+}
+
+#form-bc button {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #FF7006;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+#form-bc button:hover {
+    background-color: transparent;
+    color: #FF7006;
+    border: 1px solid #FF7006;
+}
+
+#login-sym {
+    margin-top: 20px;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+#Login-name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#login-sym i {
+    margin: 0 10px;
+    transition: color 1s;
+}
+
+#login-sym i:hover {
+    color: #FF7006;
+}
+
+
+#form-box.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#form-box.slide-out {
+    transform: translateX(100%);
+    opacity: 0;
+}
+#signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+#signup-form a{
+    text-decoration: none;
+    color: #FF7006;
+}
+
+
+@media (max-width: 1200px) {
+    #navbar {
+        justify-content: space-between;
+    }
+
+    .nav-box span {
+        margin-left: 25%;
+    }
+
+    #nav-box2 {
+        display: none;
+    }
+
+    #nav-mob {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+
+    #nav-mob a {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 900px) {
+    #hero-contant {
+        flex-wrap: wrap;
+    }
+
+    #form-box {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 750px) {
+    #nav-box3 {
+        visibility: hidden;
+    }
+}
+
+

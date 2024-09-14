@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-image: url('1.jpg');
+    background-size: cover;
+    color: white;
+}
+
+/* Navbar */
+#navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+#nav-box2 :hover{
+    color: #FF7006;
+    font-size: 1.2rem;
+}
+
+#nav-box1 span {
+    color: #FF7006;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.nav-box a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    transition: all 0.7s;
+}
+
+#nav-box3 input {
+    padding: 6px 12px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 1.2s;
+}
+
+#nav-box3 button {
+    padding: 4px 12px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: #FF7006;
+    border: 1px solid #FF7006;
+    border-radius: 5px;
+    transition: background-color 1s, font-size 1s;
+}
+
+/* Hero Section */
+#services-hero {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#services-hero .hero-text h1 {
+    font-size: 3rem;
+    color: #FF7006;
+}
+
+#services-hero .hero-text p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+}
+
+
+#services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid #FF7006;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-box i {
+    font-size: 3rem;
+    color: #FF7006;
+}
+
+.service-box h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.service-box p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
